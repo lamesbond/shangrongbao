@@ -1,0 +1,24 @@
+server:
+  port: 8130 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: service-oss # 服务名
+    #spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.20:8848 # nacos服务地址
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 200MB
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    keyId: LTAI5tNWST9aTHbkjSLXV5EN
+    keySecret: CetBJi0Av4HlJd9KjqjRrE0gcdJ5bW
+    bucketName: liubusi-shangrongbao
